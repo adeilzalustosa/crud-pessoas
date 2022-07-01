@@ -30,7 +30,9 @@ Aplicação CRUD para cadastro de pessoas. Ela iniciará do HTML/CSS/JS básico,
 ## Requisitos futuros
 
 - React (com React Router)
+- Bootstrap
 - localStorage
+- TypeScript
 - Servidor
 - Banco de dados
 - Container em servidor real
