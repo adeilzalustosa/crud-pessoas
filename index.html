@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de pessoas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container rounded" id="container">
+      <div class="row">
+        <h1 class="caption">Cadastro de pessoas</h1>
+      </div>
+
+      <div class="row">
+        <label for="nome">Nome</label>
+        <input
+          class="form-control"
+          type="text"
+          id="nome"
+        />
+      </div>
+      <div class="row">
+        <label for="idade">Idade</label>
+        <input
+          class="form-control"
+          type="number"
+          id="idade"
+          style="width: 100px"
+          maxlength="3"
+        />
+      </div>
+
+      <div class="row">
+        <div class="text-end">
+          <button type="button" class="btn btn-danger">Limpar</button>
+          <button class="btn btn-primary">Salvar</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <h1 class="caption">Listagem de pessoas</h1>
+      </div>
+      <div class="row">
+        <table class="table">
+          <thead class="table-head">
+            <tr>
+              <th>#</th>
+              <th width="398">Nome</th>
+              <th>Idade</th>
+              <th>Edição</th>
+            </tr>
+          </thead>
+          <tbody id="person-list"></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

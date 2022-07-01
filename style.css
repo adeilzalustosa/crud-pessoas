@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+label {
+  display: block;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.container {
+  width: 800px;
+  border: solid 2px yellowgreen;
+}
+
+.row {
+  margin: 20px;
+}
+
+.rounded {
+  border-radius: 8px;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.caption {
+  margin: 0;
+  padding: 10px;
+  background-color: rgb(131, 196, 131);
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  border-radius: 8px;
+}
+
+.form-control {
+  padding: 10px;
+  border: solid 2px;
+  border-style: groove;
+  border-color: yellowgreen;
+  border-radius: 8px;
+  font-family: Courier;
+  width: 100%;
+}
+
+.btn {
+  margin: 4px;
+  border-style: hidden;
+  border-radius: 8px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 20px 10px 20px;
+  width: 100px;
+}
+
+.btn.btn-primary {
+  color: white;
+  background-color: royalblue;
+}
+
+.btn.btn-danger {
+  color: white;
+  background-color: rgb(219, 6, 6);
+}
+
+.table {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  border: hidden;
+  font-size: 18px;
+  width: 100%;
+}
+
+.table>.table-head {
+  font-weight: bold;
+  color: white;
+  background-color: rgb(131, 196, 131);
+}
+
+.table>thead>tr>th,
+td {
+  border: hidden;
+  padding: 5px;
+}
+
+.table>tbody>tr:nth-child(even) {
+  background-color: lightgray;
+}
