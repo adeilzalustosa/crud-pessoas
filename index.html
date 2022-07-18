@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de pessoas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="main">
+      <!-- - criar uma classe row com 12px de topo e rodapé
+    - adicionar borda que acende nos edits e botoes
+   ok - os botoes salvar e editar devem ser azul
+   ok - o botoes de limpar e exclur devem ser vermelhos
+   ok - os botoes e edits precisam ser um pouco maiores
+   ok - padronizar o titulo
+   ok - o negrito dos titulos da tabela precisam ser aplicados via classe CSS
+    - alinhar os componentes naturalmente
+   ok - alinhar colunas numericas da tabela à direita
+    - alinhar colunas alfanumericas da tabela à esquerda
+   ok- Dar margem em todos os componentes
+   ok- estilizar os edits (arredondados)
+   ok- estilizar table -->
+      <h1>Cadastro de pessoas</h1>
+      <div>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" />
+      </div>
+      <div>
+        <label for="idade">Idade</label>
+        <input type="text" id="idade" />
+      </div>
+      <div>
+        <button class="limpa">Limpar</button>
+        <button class="salva">Salvar</button>
+      </div>
+
+      <table>
+        <tbody>
+          <tr>
+            <h2 class="listagem">Listagem de pessoas</h2>
+          </tr>
+          <tr class="tabela-linha1">
+            <td><b>#</b></td>
+            <td><b>Nome</b></td>
+            <td><b>Idade</b></td>
+            <td><b>Edição</b></td>
+          </tr>
+          <tr>
+            <td>001</td>
+            <td class="pessoa-nome">Fulano de Tal</td>
+            <td>25</td>
+            <td>
+              <button class="edita">Editar</button>
+              <button class="exclui">Excluir</button>
+            </td>
+          </tr>
+          <tr>
+            <td>002</td>
+            <td class="pessoa-nome">Cumade Zé</td>
+            <td>72</td>
+            <td>
+              <button class="edita">Editar</button>
+              <button class="exclui">Excluir</button>
+            </td>
+          </tr>
+          <tr>
+            <td>003</td>
+            <td class="pessoa-nome">Genoveva</td>
+            <td>104</td>
+            <td>
+              <button class="edita">Editar</button>
+              <button class="exclui">Excluir</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

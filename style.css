@@ -1,0 +1,97 @@
+.main {
+  width: 800px;
+  border: solid 2px yellowgreen;
+  border-radius: 10px;
+  margin-left: 10px;
+  padding: 10px;
+}
+
+h1 {
+  padding: 10px;
+  background-color: rgb(131, 196, 131);
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  border-radius: 15px;
+}
+
+input {
+  width: 400px;
+  border: solid 2px;
+  border-style: groove;
+  border-color: yellowgreen;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: Courier;
+  margin: 12px;
+
+}
+
+button {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-style: hidden;
+  border-radius: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+.salva,
+.edita {
+  background-color: royalblue;
+}
+
+.limpa,
+.exclui {
+  background-color: rgb(219, 6, 6);
+}
+
+table {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: hidden;
+  font-size: 18px;
+  width: 750px;
+}
+
+td,
+tr,
+th {
+  border: hidden;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 8px;
+}
+
+tr:nth-child(odd) {
+  background-color: lightgrey;
+}
+
+#idade, label{
+  width: 100px;
+}
+.listagem {
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-bottom: 0px;
+  background-color: rgb(131, 196, 131);
+}
+
+.tabela-linha1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  background-color: rgb(131, 196, 131);
+}
