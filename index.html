@@ -9,8 +9,8 @@
   </head>
 
   <body>
-    <div class="main">
-      <!-- - criar uma classe row com 12px de topo e rodapé
+    <div class="container">
+      <!--
     - adicionar borda que acende nos edits e botoes
    ok - os botoes salvar e editar devem ser azul
    ok - o botoes de limpar e exclur devem ser vermelhos
@@ -23,60 +23,64 @@
    ok- Dar margem em todos os componentes
    ok- estilizar os edits (arredondados)
    ok- estilizar table -->
-      <h1>Cadastro de pessoas</h1>
-      <div>
+      <div class="row">
+        <h1>Cadastro de pessoas</h1>
+      </div>
+      <div class="row">
         <label for="nome">Nome</label>
         <input type="text" id="nome" />
       </div>
-      <div>
+      <div class="row">
         <label for="idade">Idade</label>
         <input type="number" id="idade" />
       </div>
-      <div>
+      <div class="row">
         <button class="limpa">Limpar</button>
         <button class="salva">Salvar</button>
       </div>
 
-      <table>
-        <tbody>
-          <tr>
-            <h2 class="listagem">Listagem de pessoas</h2>
-          </tr>
-          <tr class="tabela-linha1">
-            <td><b>#</b></td>
-            <td><b>Nome</b></td>
-            <td><b>Idade</b></td>
-            <td><b>Edição</b></td>
-          </tr>
-          <tr>
-            <td>001</td>
-            <td class="pessoa-nome">Fulano de Tal</td>
-            <td>25</td>
-            <td>
-              <button class="edita">Editar</button>
-              <button class="exclui">Excluir</button>
-            </td>
-          </tr>
-          <tr>
-            <td>002</td>
-            <td class="pessoa-nome">Cumade Zé</td>
-            <td>72</td>
-            <td>
-              <button class="edita">Editar</button>
-              <button class="exclui">Excluir</button>
-            </td>
-          </tr>
-          <tr>
-            <td>003</td>
-            <td class="pessoa-nome">Genoveva</td>
-            <td>104</td>
-            <td>
-              <button class="edita">Editar</button>
-              <button class="exclui">Excluir</button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="row">
+        <h1 class="listagem">Listagem de pessoas</h1>
+      </div>
+      <div class="row">
+        <table>
+          <tbody>
+            <tr class="tabela-linha1">
+              <td><b>#</b></td>
+              <td><b>Nome</b></td>
+              <td><b>Idade</b></td>
+              <td><b>Edição</b></td>
+            </tr>
+            <tr>
+              <td>001</td>
+              <td class="pessoa-nome">Fulano de Tal</td>
+              <td>25</td>
+              <td>
+                <button class="edita">Editar</button>
+                <button class="exclui">Excluir</button>
+              </td>
+            </tr>
+            <tr>
+              <td>002</td>
+              <td class="pessoa-nome">Cumade Zé</td>
+              <td>72</td>
+              <td>
+                <button class="edita">Editar</button>
+                <button class="exclui">Excluir</button>
+              </td>
+            </tr>
+            <tr>
+              <td>003</td>
+              <td class="pessoa-nome">Genoveva</td>
+              <td>104</td>
+              <td>
+                <button class="edita">Editar</button>
+                <button class="exclui">Excluir</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </body>
 </html>
