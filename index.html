@@ -11,20 +11,13 @@
   <body>
     <div class="container">
       <!--
-    - adicionar borda que acende nos edits e botoes
-   ok - os botoes salvar e editar devem ser azul
-   ok - o botoes de limpar e exclur devem ser vermelhos
-   ok - os botoes e edits precisam ser um pouco maiores
-   ok - padronizar o titulo
-   ok - o negrito dos titulos da tabela precisam ser aplicados via classe CSS
-    - alinhar os componentes naturalmente
+      ok - o negrito dos titulos da tabela precisam ser aplicados via classe CSS
    ok - alinhar colunas numericas da tabela à direita
     - alinhar colunas alfanumericas da tabela à esquerda
-   ok- Dar margem em todos os componentes
    ok- estilizar os edits (arredondados)
    ok- estilizar table -->
       <div class="row">
-        <h1>Cadastro de pessoas</h1>
+        <h1 class="caption">Cadastro de pessoas</h1>
       </div>
       <div class="row">
         <label for="nome">Nome</label>
@@ -35,12 +28,12 @@
         <input type="number" id="idade" />
       </div>
       <div class="row">
-        <button class="limpa">Limpar</button>
-        <button class="salva">Salvar</button>
+        <button class="btn btn-red">Limpar</button>
+        <button class="btn btn-blue">Salvar</button>
       </div>
 
       <div class="row">
-        <h1 class="listagem">Listagem de pessoas</h1>
+        <h1 class="caption">Listagem de pessoas</h1>
       </div>
       <div class="row">
         <table>
@@ -56,8 +49,8 @@
               <td class="pessoa-nome">Fulano de Tal</td>
               <td>25</td>
               <td>
-                <button class="edita">Editar</button>
-                <button class="exclui">Excluir</button>
+                <button class="btn btn-blue">Editar</button>
+                <button class="btn btn-red">Excluir</button>
               </td>
             </tr>
             <tr>
@@ -65,8 +58,8 @@
               <td class="pessoa-nome">Cumade Zé</td>
               <td>72</td>
               <td>
-                <button class="edita">Editar</button>
-                <button class="exclui">Excluir</button>
+                <button class="btn btn-blue">Editar</button>
+                <button class="btn btn-red">Excluir</button>
               </td>
             </tr>
             <tr>
@@ -74,8 +67,8 @@
               <td class="pessoa-nome">Genoveva</td>
               <td>104</td>
               <td>
-                <button class="edita">Editar</button>
-                <button class="exclui">Excluir</button>
+                <button class="btn btn-blue">Editar</button>
+                <button class="btn btn-red">Excluir</button>
               </td>
             </tr>
           </tbody>
