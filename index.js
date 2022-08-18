@@ -45,3 +45,24 @@ const linhas = cadastros.map((cadastro) => {
 
 const tabela = document.getElementById("person-list");
 linhas.forEach((linha) => tabela.appendChild(linha));
+
+let btnDanger = document.querySelector("#btn-clear");
+let inputs = document.querySelectorAll("input");
+btnDanger.addEventListener("click", () =>
+  inputs.forEach((input) => (input.value = ""))
+);
+
+const inputNome = document.querySelector("#nome");
+const inputIdade = document.querySelector("#idade");
+
+const updateButtons = () => {
+  const isValid = inputNome.value !== "" && inputIdade.value !== "";
+
+  const saveButton = document.querySelector("#btn-save");
+  const clearButton = document.querySelector("#btn-clear");
+  saveButton.disabled = !isValid;
+  clearButton.disabled = !isValid;
+};
+
+inputNome.addEventListener("change", updateButtons);
+inputIdade.addEventListener("change", updateButtons);

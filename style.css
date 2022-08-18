@@ -57,6 +57,11 @@ label {
   width: 100px;
 }
 
+.btn:disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
 .btn.btn-primary {
   color: white;
   background-color: royalblue;

@@ -25,14 +25,17 @@
           type="number"
           id="idade"
           style="width: 100px"
-          maxlength="3"
+          min="0"
+          max="130"
         />
       </div>
 
       <div class="row">
         <div class="text-end">
-          <button type="button" class="btn btn-danger">Limpar</button>
-          <button class="btn btn-primary">Salvar</button>
+          <button type="button" class="btn btn-danger" id="btn-clear">
+            Limpar
+          </button>
+          <button class="btn btn-primary" id="btn-save">Salvar</button>
         </div>
       </div>
 
