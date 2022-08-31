@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cadastro de pessoas</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -14,31 +20,32 @@
         <h1 class="caption">Cadastro de pessoas</h1>
       </div>
 
-      <div class="row">
-        <label for="nome">Nome</label>
-        <input class="form-control" type="text" id="nome" maxlength="100" />
-      </div>
-      <div class="row">
-        <label for="idade">Idade</label>
-        <input
-          class="form-control"
-          type="number"
-          id="idade"
-          style="width: 100px"
-          min="0"
-          max="130"
-        />
-      </div>
+      <div class="form-control-border">
+        <div class="row">
+          <label for="name">Nome</label>
+          <input class="form-control" type="text" id="name" maxlength="100" />
+        </div>
+        <div class="row">
+          <label for="age">Idade</label>
+          <input
+            class="form-control"
+            type="number"
+            id="age"
+            style="width: 100px"
+            min="0"
+            max="130"
+          />
+        </div>
 
-      <div class="row">
-        <div class="text-end">
-          <button type="button" class="btn btn-danger" id="btn-clear">
-            Limpar
-          </button>
-          <button class="btn btn-primary" id="btn-save">Salvar</button>
+        <div class="row">
+          <div class="text-end">
+            <button type="button" class="btn btn-danger" id="btn-clear" disabled>
+              Limpar
+            </button>
+            <button class="btn btn-primary" id="btn-save" disabled>Salvar</button>
+          </div>
         </div>
       </div>
-
       <div class="row">
         <h1 class="caption">Listagem de pessoas</h1>
       </div>
@@ -52,10 +59,17 @@
               <th>Edição</th>
             </tr>
           </thead>
-          <tbody id="person-list"></tbody>
+          <tbody id="person-list">
+            <tr>
+              <td colspan="4" class="text-center">
+                <h2>Nenhum usuário adicionado</h2>
+              </td>
+            </tr>
+          </tbody>
         </table>
       </div>
     </div>
+    <script src="https://randojs.com/2.0.0.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
