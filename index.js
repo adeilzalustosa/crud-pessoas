@@ -13,8 +13,28 @@ const getPersonIndex = (person) =>
 
 const generateId = () => rando(1, 9999).toString().padStart(4, "0");
 
+const emptyState = () => {
+  const tr = document.createElement("tr");
+  const td = document.createElement("td");
+  const h2 = document.createElement("h2");
+  h2.innerText = "Nenhum usuário adicionado";
+  td.classList.add("text-center");
+  td.colSpan = 4;
+  td.appendChild(h2);
+  tr.appendChild(td);
+  return tr;
+};
+
 const fillTable = () => {
-  const rows = people.map((person) => {
+  const table = document.getElementById("person-list");
+  table.innerHTML = "";
+
+  if (people.length === 0) {
+    table.appendChild(emptyState());
+    return;
+  }
+
+  people.forEach((person) => {
     const tdId = document.createElement("td");
     tdId.classList.add("text-end");
     tdId.innerHTML = person.id;
@@ -62,12 +82,8 @@ const fillTable = () => {
     tr.appendChild(tdAge);
     tr.appendChild(tdEdit);
 
-    return tr;
+    table.appendChild(tr);
   });
-
-  const table = document.getElementById("person-list");
-  table.innerHTML = "";
-  rows.forEach((row) => table.appendChild(row));
 };
 
 const clearAll = () => {
@@ -104,3 +120,5 @@ btnSave.addEventListener("click", () => {
   fillTable();
   clearAll();
 });
+
+fillTable();
